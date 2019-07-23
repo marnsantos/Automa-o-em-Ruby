@@ -1,0 +1,8 @@
+[caps]
+platformName = "Android"
+deviceName = "4200c4add0027400"
+app = '/Users/marcia.santos/Documents/Projetos/Automation/IrandubaPescados/PescattuMobile/Android/arc/app-debug.apk'
+appPackage = "com.pescato.itbam.pescattu2"
+
+
+

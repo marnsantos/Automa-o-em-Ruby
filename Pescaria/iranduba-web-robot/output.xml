@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190711 18:10:45.705" generator="Robot 3.1.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/marcia.santos/Documents/Projetos/Automation/IrandubaPescados/iranduba-web-robot/introducao.robot" id="s1" name="Introducao">
+<test id="s1-t1" name="Cenario: Buscar por Robot Framework no Google e entrar na pagina">
+<kw name="Abrir o Chrome na pagina &lt;http://www.google.com.br&gt;">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190711 18:10:45.838" level="INFO">Opening browser 'Chrome' to base url 'http://www.google.com.br'.</msg>
+<status status="PASS" endtime="20190711 18:10:49.292" starttime="20190711 18:10:45.837"></status>
+</kw>
+<status status="PASS" endtime="20190711 18:10:49.292" starttime="20190711 18:10:45.837"></status>
+</kw>
+<kw name="Digite &quot;Robot Framework&quot; no campo de busca">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${palavra busca}</arg>
+</arguments>
+<msg timestamp="20190711 18:10:49.293" level="INFO">${palavra busca} = Robot Framework</msg>
+<status status="PASS" endtime="20190711 18:10:49.293" starttime="20190711 18:10:49.293"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id = gstyle</arg>
+<arg>${palavra busca}</arg>
+</arguments>
+<msg timestamp="20190711 18:10:49.293" level="INFO">Typing text 'Robot Framework' into text field 'id = gstyle'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190711 18:10:49.835" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190711 18:10:49.836" starttime="20190711 18:10:49.315"></status>
+</kw>
+<msg timestamp="20190711 18:10:49.845" level="FAIL">ElementNotVisibleException: Message: element not interactable
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Mac OS X 10.14.5 x86_64)
+</msg>
+<status status="FAIL" endtime="20190711 18:10:49.845" starttime="20190711 18:10:49.293"></status>
+</kw>
+<status status="FAIL" endtime="20190711 18:10:49.845" starttime="20190711 18:10:49.292"></status>
+</kw>
+<doc>Cenario para uma busca sobre Robot Framework
+no Google</doc>
+<tags>
+<tag>busca</tag>
+</tags>
+<status status="FAIL" endtime="20190711 18:10:49.845" critical="yes" starttime="20190711 18:10:45.836">ElementNotVisibleException: Message: element not interactable
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Mac OS X 10.14.5 x86_64)
+</status>
+</test>
+<doc>Suite de apresentaçao do Robot Framework
+com uma busca simples no Google
+para o blog da Concrete.</doc>
+<status status="FAIL" endtime="20190711 18:10:49.846" starttime="20190711 18:10:45.711"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">busca</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Introducao" pass="0">Introducao</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

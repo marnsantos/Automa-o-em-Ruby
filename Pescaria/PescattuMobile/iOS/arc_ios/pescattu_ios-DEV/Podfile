@@ -1,0 +1,47 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '11.2'
+
+target 'Pescatta' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Pescatta
+	
+	#for facebook login
+	pod 'FacebookCore'
+	pod 'FacebookLogin'
+	#for google login
+	pod 'GoogleSignIn'
+	#for rest requests
+    pod 'Alamofire'
+    #for request mapping
+    pod 'AlamofireObjectMapper'
+    #to use toasts
+    pod 'Toast-Swift', '~>3.0.1'
+    #to download and cache images
+    pod 'SDWebImage'
+    #to manage layout with keyboard
+    pod 'IQKeyboardManagerSwift'
+    #to track application crashes
+    pod 'HockeySDK'
+    #to use custom text fields
+    pod 'TextFieldEffects', '~>1.4.0'
+    #to use custom segmentedcontrol
+    pod 'SWSegmentedControl'
+    #to use custom stepper
+    pod 'GMStepper', '~>2.1'
+    #to encrypt password
+    pod 'BCryptSwift'
+    
+
+  target 'PescattaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PescattaUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,9 @@
+[caps]
+platformName = "iOS"
+platformVersion = "11.2"
+deviceName = "iPhone 7"
+app = "/Users/transire/Automation/pescattu/arc_ios/PescattuEmpresas.ipa"
+udid = "E44D1E74-9E06-4515-8A9A-261CC1049BBA"
+bundleId = "br.org.transire.Pescattu-Empresas"
+automationName = "XCUITest"
+        

@@ -1,0 +1,6 @@
+framework module Pods_Pescatta {
+  umbrella header "Pods-Pescatta-umbrella.h"
+
+  export *
+  module * { export * }
+}

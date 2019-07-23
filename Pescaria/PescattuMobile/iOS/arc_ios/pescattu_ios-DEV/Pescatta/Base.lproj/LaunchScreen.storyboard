@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mtC-eN-zL6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GOA-Ur-5uh">
+            <objects>
+                <viewController id="mtC-eN-zL6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xOS-ZJ-tT5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash" translatesAutoresizingMaskIntoConstraints="NO" id="gEm-ta-C8Q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pescattu.com_marca" translatesAutoresizingMaskIntoConstraints="NO" id="MIb-hy-aom">
+                                <rect key="frame" x="47.5" y="251" width="281.5" height="166.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gEm-ta-C8Q" firstAttribute="top" secondItem="xOS-ZJ-tT5" secondAttribute="top" id="2ba-35-ZDe"/>
+                            <constraint firstItem="MIb-hy-aom" firstAttribute="centerY" secondItem="gEm-ta-C8Q" secondAttribute="centerY" id="7Xy-cv-Ggd"/>
+                            <constraint firstItem="gEm-ta-C8Q" firstAttribute="bottom" secondItem="xOS-ZJ-tT5" secondAttribute="bottom" id="BjH-kR-fLo"/>
+                            <constraint firstItem="MIb-hy-aom" firstAttribute="centerX" secondItem="gEm-ta-C8Q" secondAttribute="centerX" id="Xka-ek-mOP"/>
+                            <constraint firstItem="MIb-hy-aom" firstAttribute="height" secondItem="gEm-ta-C8Q" secondAttribute="height" multiplier="0.25" id="ZkS-pD-A0x"/>
+                            <constraint firstItem="gEm-ta-C8Q" firstAttribute="trailing" secondItem="Qcn-8L-rUB" secondAttribute="trailing" id="d9y-98-YGL"/>
+                            <constraint firstItem="gEm-ta-C8Q" firstAttribute="leading" secondItem="Qcn-8L-rUB" secondAttribute="leading" id="iDV-Uc-PTY"/>
+                            <constraint firstItem="MIb-hy-aom" firstAttribute="width" secondItem="gEm-ta-C8Q" secondAttribute="width" multiplier="0.75" id="x2r-dT-wvG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qcn-8L-rUB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bY0-lt-RIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_splash" width="320" height="568"/>
+        <image name="pescattu.com_marca" width="268" height="42"/>
+    </resources>
+</document>

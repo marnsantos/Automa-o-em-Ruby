@@ -1,0 +1,8 @@
+[caps]
+platformName = "Android"
+deviceName = "emulator-5554"
+app = '/Users/transire/Automation/pescattu/cucumber/app-debug-4.apk'
+appPackage = "com.pescato.itbam.pescattu2"
+
+
+

@@ -1,0 +1,9 @@
+---
+
+default: -p html -p dot
+html: --format html --out=log/features.html
+bdd: --format pretty
+dot: --format progress
+chromer: BROWSER=chrome
+firefox: BROWSER=firefox
+headless: BROWSER=headless
